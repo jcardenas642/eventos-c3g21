@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <title>Inicio de Sesión</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: grid;            
+            height: 100vh;
+            align-items: center;
+            font-family: 'Architects Daughter', cursive;
+            
+        }
+        
+        main{
+            border: 1px solid grey;
+            padding: 32px;
+            width: 32%;
+            margin: auto;
+                 
+        }
+        main img{
+            display: block;
+            margin: auto;
+            width: 256px;
+            margin-bottom: 64px;
+        }
+        main h2{
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .grid-container{
+            display: grid;
+            row-gap: 32px;
+            width: 48%;
+            border: 1px solid gray;
+            margin: auto;
+            padding: 32px;
+            grid-template-rows: repeat(3, 1fr);
+            align-items: center;
+            align-content: center;
+        }
+
+        .grid-item-botones{
+            text-align: center;
+        }
+
+        button{
+            padding: 8px;
+            width: 100px;
+            border-color: transparent;
+            border-radius: 200px;
+            display: inline-block;
+        }
+        main a{
+            display: block;
+            text-align: center;
+            margin-top: 16px;
+        }
+
+        input{
+            width: 100%;
+            height: 32px;
+        }
+
+        input::placeholder{
+            font-family: 'Architects Daughter', cursive;
+            font-size: 8pt;
+            color:palevioletred;
+            padding-left: 8px;
+        }
+
+        input:focus{
+            padding-left: 8px;
+        }
+
+        button:default{
+            font-family: 'Architects Daughter', cursive;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    
+    <main>
+        <img src="https://misiontic2022.mintic.gov.co/mtv2/assets/assets/images/logo-mision.png" alt="">
+        <h2>Iniciar Sesión</h2>
+        <form action="#" method="post">
+            <div class="grid-container">
+                <div class="grid-item-usuario">
+                    <label for="">Nombre de usuario</label>
+                    <input placeholder="Escribe tu nombre de usuario" type="text" name="usuario" id="">
+                </div>
+                <div class="grid-item-pass">
+                    <label for="">Contraseña</label>
+                    <input placeholder="Escribe tu contraseña" type="password" name="pass" id="">
+                </div>
+                <div class="grid-item-botones">
+                    <button>Ingresar</button>
+                    <button>Crear cuenta</button>
+                </div>
+            </div>
+        </form>
+        <a href="">Recordar contraseña</a>
+    </main>
+</body>
+</html>
