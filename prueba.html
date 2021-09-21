@@ -7,18 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/mobile.css">
-    <link rel="stylesheet" href="css/desktop.css">
     <title>Listado de eventos</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
     
 </head>
-<body>
-    <header>
-        <h1>
+<body class="grid grid-cols-1 lg:grid-cols-12 gap-4 mt-10">
+    <header class="bg-red-100 lg:bg-red-800 lg:col-span-12">
             <a href="https://misiontic2022.unab.edu.co/" target="_blank">
-                <img width="80px" src="https://misiontic2022.mintic.gov.co/mtv2/assets/assets/images/logo-mision.png"
+                <img class="w-500" src="https://misiontic2022.mintic.gov.co/mtv2/assets/assets/images/logo-mision.png"
                     alt="MisiónTIC">
             </a>
+        <h1 class="bg-blue-900 text-white">
             Página de Elementos HTML
         </h1>
         <!-- Logo de la página
@@ -26,12 +26,12 @@ Iconos
 Imagén perfil -->
         
     </header>
-    <nav>
+    <nav class="bg-purple-100 lg:col-span-12">
         <a href="https://unab.edu.co" target="_blank">Página de la UNAB</a>
         <a href="otra.html">Otra página</a>
         <a href="#">Nuevo</a>
     </nav>
-    <aside>
+    <aside class="bg-yellow-100 lg:col-span-2">
         <h2>Listas</h2>
         <h3>Ordenadas</h3>
         <ol type="a">
@@ -45,11 +45,11 @@ Imagén perfil -->
             <li>Sonido</li>
             <li>Banda en Vivo</li>
             <li>
-                <a href="otra.html">Ir a la otra página</a>
+                <a href="#pie">Ir a la otra página</a>
             </li>
         </ul>
     </aside>
-    <main>        
+    <main class="bg-green-100 grid md:grid-cols-10  lg:col-span-10">        
         <div class="imagenes">
             <h2>Imágenes</h2>
             <img height="100px" src="https://i.ytimg.com/vi/olVNMbNC7OI/maxresdefault.jpg" alt="Servicio de Animador" />
@@ -137,7 +137,7 @@ Imagén perfil -->
 
 
     </main>
-    <footer>
+    <footer id="pie" class="bg-pink-200 lg:col-span-12">
         <h2>Encabezados</h2>
         <h1>Titulo</h1>
         <h2 class="fondo_naranja">SubTitulos</h2>
